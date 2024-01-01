@@ -1,0 +1,338 @@
+/* Apply box-sizing and fonts to the entire page */
+* {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+:root {
+    --light: #fff;
+    --light-purple: #ab80fa;
+    --text-color: #293472;
+    --dark: #081b29;
+  }
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(184, 157, 235);
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.19; /* Ajusta la opacidad según tus necesidades */
+}
+
+/* --------- HEADER ----------*/
+/* Apply a padding of 20px on all sides, set a background color, and text color to white */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    z-index: 100;
+    background-color: #303233;
+    padding: 30px 20px;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    font-size: 25px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: var(--light-purple);
+}
+
+.banner {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/img/bg.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.banner h2 {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    background-color: var(--light-purple);
+    padding: 20px 80px;
+    color: var(--dark);
+    border: 2px solid var(--dark);
+    border-radius: 40px;
+}
+
+/** --------- SECTION aboutMe ---------*/
+
+.aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    color: var(--text-color);
+}
+
+.about-text img {
+    max-width: 300px;
+    border-radius: 8px;
+    padding: .8rem .8rem 0 0;
+    float: right;
+}
+
+.h2 {
+    font-size: 30px;
+    margin: .8rem 0;
+    text-align: center;
+
+}
+
+.aboutMe h2 span {
+    color: var(--light-purple);
+}
+
+.aboutAside {
+    float: left;
+    width: 20%;
+    border-right: 5px solid var(--text-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.about-text {
+    float: right;
+    width: 80%;
+    padding: 20px 10px 10px 20px;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.about-text p {
+    margin: .8rem 0;
+    font-size:18px;
+}
+
+
+/* --------- SECTION skills ---------*/
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text-color);
+    margin-bottom: 4rem;
+}
+
+.work h2 {
+    float: left;
+    width: 20%;
+    font-size: 50px;
+    border-right: 5px solid var(--text-color);
+    padding: 20px;
+    color: var(--text-color);
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.work-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0 20px;
+}
+
+.work-content figure img {
+
+    width: 100%;
+    height: auto;
+    
+}
+
+.work-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-grid figure {
+    width: calc(50% - 10px); /* Asume un margen de 10px */
+    height: auto;
+    margin: 5px;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fff; /* Cambia el color del texto según tus necesidades */
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+figcaption h3 {
+    font-size: 1.3em;
+    margin: 0 0 10px 0; /* Margen inferior de 10px */
+    
+}
+
+/** --------- SECTION contactMe ---------*/
+
+.contactMe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 40px;
+
+}
+
+.contact {
+    width: 20%;
+    border-right: 5px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin: .8rem 0;
+    text-align: center;
+}
+
+.contact-item {
+    width: 70%; /* Ajusta el ancho según tus necesidades */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item a {
+    
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--light-purple);
+    border-radius: 50%;
+    font-size: 20px;
+    color: #303233;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+
+}
+
+.contact-item a:hover {
+    background: var(--light-purple);
+    color: var(--dark);
+    box-shadow: 0 0 20px var(--light-purple);
+}
+
+.btn-box {
+    display: block;
+    width: fit-content;
+    margin: 50px auto 0;
+    padding: 12px 28px;
+    background: var(--light-purple);
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 5px var(--light-purple),
+    0 0 25px var(--light-purple);
+    
+}
+
+.btn-box-2 {
+    display: block;
+    width: fit-content;
+    margin: 5px auto 0;
+    padding: 10px 10px;
+    background: var(--light-purple);
+    border-radius: 40px;
+    font-size: 18px;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 0 5px var(--light-purple),
+    0 0 25px var(--light-purple);
+}
+
+.btn-box-2:hover {
+    box-shadow: 0 0 5px var(--light),
+    0 0 25px var(--light),
+    0 0 50px var(--light),
+    0 0 100px var(--light);
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px var(--light),
+    0 0 25px var(--light),
+    0 0 50px var(--light),
+    0 0 100px var(--light);
+}
+
+
+/* --------- FOOTER ---------*/
+/* set icon color to red */
+.fa-heart {
+    color: red;
+}
+
+/* format for footer */
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* format for the h3 inside the footer*/
+footer h3 {
+    font-size: 20px;
+}
