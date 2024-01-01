@@ -101,7 +101,6 @@ header {
     flex-wrap: wrap;
     flex-direction: row;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 60px;
     color: var(--text-color);
 }
 
@@ -113,7 +112,7 @@ header {
 }
 
 .h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin: .8rem 0;
     text-align: center;
 
@@ -143,7 +142,7 @@ header {
 
 .about-text p {
     margin: .8rem 0;
-    font-size:18px;
+    font-size:20px;
 }
 
 
@@ -162,13 +161,12 @@ header {
 .work h2 {
     float: left;
     width: 20%;
-    font-size: 50px;
     border-right: 5px solid var(--text-color);
     padding: 20px;
     color: var(--text-color);
-    font-size: 30px;
-    margin: 0 auto;
     text-align: center;
+    font-size: 50px;
+    margin: .8rem 0;
 }
 
 .work-content {
@@ -236,7 +234,7 @@ figcaption h3 {
 }
 
 .contact h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin: .8rem 0;
     text-align: center;
 }
@@ -328,7 +326,7 @@ figcaption h3 {
 footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
 
