@@ -1,9 +1,9 @@
 # portfolio
-This is theportfolio, Challenge #02 
+This is the personal portfolio, Challenge #02 
 
 ## Description
 
-A personal portfolio website. It includes several sections such as a header with a navigation bar, a main section with project images and descriptions, and a contact section.
+A personal portfolio website that includes several sections such as a header with a navigation bar, a main section with project images and descriptions, and a contact section.
 ## Table of Contents
 
 - [Credits](#credits)

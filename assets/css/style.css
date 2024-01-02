@@ -3,12 +3,13 @@
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+/* Declaration of variables in this case colors palette */
 :root {
     --light: #fff;
     --light-purple: #ab80fa;
     --text-color: #293472;
     --dark: #081b29;
-  }
+}
 
 body {
     min-height: 100vh;
@@ -30,7 +31,7 @@ body::before {
 }
 
 /* --------- HEADER ----------*/
-/* Apply a padding of 20px on all sides, set a background color, and text color to white */
+/* Apply a padding of 20px and 10px, set a background color */
 header {
     position: fixed;
     top: 0;
@@ -72,7 +73,7 @@ header {
     position: relative;
     top: 0;
     left: 0;
-    background-image: url('/assets/img/bg.png');
+    background-image: url('../img/bg.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -115,7 +116,6 @@ header {
     font-size: 50px;
     margin: .8rem 0;
     text-align: center;
-
 }
 
 .aboutMe h2 span {
@@ -146,7 +146,7 @@ header {
 }
 
 
-/* --------- SECTION skills ---------*/
+/* --------- SECTION skills or works ---------*/
 
 .work {
     display: flex;
@@ -335,7 +335,6 @@ footer h3 {
         width: 70%;
         padding: 20px 10px 10px 20px;
         color: var(--text-color);
-        font-size: 20px;
         line-height: 1.4;
         margin-bottom: 4rem;
     }
