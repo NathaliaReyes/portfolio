@@ -158,16 +158,6 @@ header {
     margin-bottom: 4rem;
 }
 
-.work h2 {
-    float: left;
-    width: 20%;
-    border-right: 5px solid var(--text-color);
-    padding: 20px;
-    color: var(--text-color);
-    text-align: center;
-    font-size: 50px;
-    margin: .8rem 0;
-}
 
 .work-content {
     display: flex;
@@ -225,18 +215,6 @@ figcaption h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 40px;
 
-}
-
-.contact {
-    width: 20%;
-    border-right: 5px solid var(--text-color);
-    color: var(--text-color);
-}
-
-.contact h2 {
-    font-size: 50px;
-    margin: .8rem 0;
-    text-align: center;
 }
 
 .contact-item {
@@ -333,4 +311,97 @@ footer {
 /* format for the h3 inside the footer*/
 footer h3 {
     font-size: 20px;
+}
+
+/* ------MEDIA QUERIES -------*/
+
+@media screen and (max-width: 1200px) {
+    .long {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .aboutAside {
+        float: left;
+        width: 30%;
+        border-right: 5px solid var(--text-color);
+        color: var(--text-color);
+        padding: 20px;
+    }
+    
+    .about-text {
+        float: right;
+        width: 70%;
+        padding: 20px 10px 10px 20px;
+        color: var(--text-color);
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 4rem;
+    }
+
+    .work-content {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 15px 0 0 0;
+    }
+
+    header .logo {
+        margin: 0 0 15px 0;
+    }
+
+    .banner {
+        top: 0;
+        left: 0;
+        height: 500px;
+    }
+
+    .aboutAside {
+        float: left;
+        width: 40%;
+        border-right: 5px solid var(--text-color);
+        color: var(--text-color);
+        padding: 20px;
+    }
+    
+    .about-text {
+        float: right;
+        width: 60%;
+        padding: 20px 10px 10px 20px;
+        color: var(--text-color);
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 4rem;
+    }
+
+    .work-content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 0 20px;
+    }
+
+    .contact-item {
+        height: 50%;
+        width: 50%;
+    }
 }
