@@ -8,7 +8,7 @@ A personal portfolio website that includes several sections such as a header wit
 
 - [Credits](#credits)
 - [License](#license)
-- [Website Appearance](#website-appearance)
+- [Website-Appearance](#website)
 
 ## Credits
 
@@ -18,7 +18,7 @@ N/A
 
 Please refer to the LICENSE in the repo.
 
-## Website Appearance {#website-appearance}
+## Website
 
 The following image shows the web application's appearance and functionality:
 
